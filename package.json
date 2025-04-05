@@ -15,7 +15,7 @@
     "express": "^5.1.0",
     "formik": "^2.4.6",
     "keen-slider": "^6.8.6",
-    "lucide-react": "^0.263.1",
+    "lucide-react": "^0.487.0",
     "mailgun.js": "^12.0.1",
     "next": "^15.2.4",
     "node-mailjet": "^6.0.8",
