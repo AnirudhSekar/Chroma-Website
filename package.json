@@ -21,6 +21,7 @@
     "node-mailjet": "^6.0.8",
     "react": "^19.0.0",
     "react-dom": "^19.0.0",
+    "tailwind-merge": "^3.1.0",
     "tw-animate-css": "^1.2.5",
     "yup": "^1.6.1"
   },
