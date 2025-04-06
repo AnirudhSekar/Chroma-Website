@@ -47,21 +47,6 @@ export default function Navbar() {
               About
             </span>
           </Link>
-          <Link href="/technology" passHref>
-            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
-              Technology
-            </span>
-          </Link>
-          <Link href="/market" passHref>
-            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
-              Market
-            </span>
-          </Link>
-          <Link href="/impact" passHref>
-            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
-              Impact
-            </span>
-          </Link>
           <Link href="/contact" passHref>
             <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
               Contact

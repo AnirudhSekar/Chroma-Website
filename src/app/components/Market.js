@@ -4,7 +4,7 @@ import Image from "next/image";
 
 const Market = () => {
   return (
-    <section className="bg-white py-16 lg:py-24 px-6 lg:px-24">
+    <section className="py-16 bg-[#faf5ff] w-full lg:py-24 px-6 lg:px-24">
       <div className="max-w-7xl mx-auto space-y-16">
         <motion.h2
           className="text-4xl lg:text-5xl font-bold text-center text-gray-800"
