@@ -22,6 +22,7 @@ export default function Navbar() {
           {/* Logo with rounded white background */}
           <div className="flex items-center">
             <div className="bg-white rounded-full p-2 shadow-lg">
+            <Link href="/" passHref>
               <Image
                 src="/logo.png"
                 alt="ChromaCare Logo"
@@ -29,12 +30,12 @@ export default function Navbar() {
                 height={100}
                 className="rounded-full"
               />
+          </Link>
+
             </div>
           </div>
 
           {/* Desktop Nav Links */}
-          
-
           <div className="hidden md:flex space-x-8">
           <Link href="/" passHref>
             <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
