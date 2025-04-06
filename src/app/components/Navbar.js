@@ -34,24 +34,33 @@ export default function Navbar() {
 
           {/* Desktop Nav Links */}
           
-
-          <div className="hidden md:flex space-x-6">
-            <Link href="/" passHref>
-              <span className="text-gray-800 hover:text-[#ed4064] transition cursor-pointer">Home</span>
-            </Link>
-            <Link href="/about" passHref>
-              <span className="text-gray-800 hover:text-[#ed4064] transition cursor-pointer">About</span>
-            </Link>
-            <Link href="/team" passHref>
-              <span className="text-gray-800 hover:text-[#ed4064] transition cursor-pointer">Technology</span>
-            </Link>
-            <Link href="/team" passHref>
-              <span className="text-gray-800 hover:text-[#ed4064] transition cursor-pointer">Market</span>
-            </Link>
-            <Link href="/team" passHref>
-              <span className="text-gray-800 hover:text-[#ed4064] transition cursor-pointer">Impact</span>
-            </Link>
-          </div>
+          <div className="hidden md:flex space-x-8">
+          <Link href="/" passHref>
+            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
+              Home
+            </span>
+          </Link>
+          <Link href="/about" passHref>
+            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
+              About
+            </span>
+          </Link>
+          <Link href="/technology" passHref>
+            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
+              Technology
+            </span>
+          </Link>
+          <Link href="/market" passHref>
+            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
+              Market
+            </span>
+          </Link>
+          <Link href="/impact" passHref>
+            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
+              Impact
+            </span>
+          </Link>
+        </div>
 
           {/* Mobile Toggle Button */}
           <div className="md:hidden">
