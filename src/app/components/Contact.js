@@ -20,7 +20,7 @@ export default function Contact() {
                   className="flex-shrink-0"
                 />
                 <p id="email-text" className="truncate">
-                  fill-email-later@email.com
+                  chromacarehq@gmail.com
                 </p>
               </div>
               <div className="relative group flex-shrink-0">
