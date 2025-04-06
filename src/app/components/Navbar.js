@@ -22,6 +22,7 @@ export default function Navbar() {
           {/* Logo with rounded white background */}
           <div className="flex items-center">
             <div className="bg-white rounded-full p-2 shadow-lg">
+            <Link href="/" passHref>
               <Image
                 src="/logo.png"
                 alt="ChromaCare Logo"
@@ -29,6 +30,8 @@ export default function Navbar() {
                 height={100}
                 className="rounded-full"
               />
+          </Link>
+
             </div>
           </div>
 

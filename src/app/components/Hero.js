@@ -67,13 +67,13 @@ export default function Hero() {
             Introducing <span className="font-semibold text-[#ed4064]">ChromaCare</span>—a color-changing, biodegradable smart bandage that detects infection early. Real-time monitoring at a fraction of the cost.
           </p>
           <div className="mt-6 flex gap-4">
-          <Link href="#learn-more" passHref>
+          <Link href="/about" passHref>
             <div className="bg-[#ed4064] hover:bg-[#d62f59] text-white px-6 py-3 rounded-2xl text-sm font-medium transition cursor-pointer">
                 Learn More
             </div>
             </Link>
 
-            <Link href="#contact" passHref>
+            <Link href="/contact" passHref>
             <div className="border border-[#8932ad] hover:bg-[#8932ad] hover:text-white text-[#8932ad] px-6 py-3 rounded-2xl text-sm font-medium transition cursor-pointer">
                 Contact Us
             </div>
