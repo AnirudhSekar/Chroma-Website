@@ -1,7 +1,7 @@
 "use client";
 import React, { useState } from "react";
 
-import { validationSchema } from "../utils/validations";
+import { validationSchema } from "../../utils/validations";
 import { Formik, Form, Field, ErrorMessage } from "formik";
 import { toFormikValidationSchema } from "zod-formik-adapter";
 

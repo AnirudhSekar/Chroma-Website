@@ -33,7 +33,6 @@ export default function Navbar() {
           </div>
 
           {/* Desktop Nav Links */}
-          
           <div className="hidden md:flex space-x-8">
           <Link href="/" passHref>
             <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
