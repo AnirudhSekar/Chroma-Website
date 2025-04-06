@@ -6,7 +6,7 @@ export default function Contact() {
   return (
     <div className="flex justify-center w-full">
       <div className="w-full lg:w-[60%]">
-        <div className="flex flex-col lg:flex-row items-center justify-center lg:p-10 md:p-5 w-full lg:gap-10 gap-10 md:gap-0">
+        <div className="flex flex-col lg:flex-row items-center justify-center lg:p-10 md:p-5 w-full lg:gap-20 gap-10 md:gap-0">
           <div className="flex flex-col lg:gap-5 md:gap-2 items-start w-full lg:w-auto order-1 lg:order-none">
             <h2 className="text-3xl sm:text-3xl">Let&apos;s Get in Touch</h2>
             <p className="w-full">Feel free to use the form or drop us an email.</p>

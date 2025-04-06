@@ -61,6 +61,11 @@ export default function Navbar() {
               Impact
             </span>
           </Link>
+          <Link href="/contact" passHref>
+            <span className="text-white font-semibold px-3 py-2 rounded-md transition duration-300 hover:bg-white hover:text-[#8932ad]">
+              Contact
+            </span>
+          </Link>
         </div>
 
           {/* Mobile Toggle Button */}
