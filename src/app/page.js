@@ -9,8 +9,8 @@ export default function Home() {
     <div className="flex flex-col min-h-screen items-center justify-items-center font-[family-name:var(--font-geist-sans)] overflow-x-hidden">
         <Navbar/>
         <Hero />
-        <Market />
         <Impact />
+        <Market />
         <Footer/>
     </div>
   );

@@ -52,7 +52,9 @@ export default function Hero() {
           viewport={{ once: true }}
           className="space-y-6"
         >
-          <h1 className="text-4xl md:text-5xl font-bold leading-tight text-[#8932ad]">
+
+            {/* Make the h1 extend further across the screen*/}
+          <h1 className="w-100 text-4xl md:text-5xl font-bold leading-tight text-[#8932ad]">
             Smart. Simple. Life-saving.
           </h1>
           <p className="text-lg md:text-xl text-gray-700">
