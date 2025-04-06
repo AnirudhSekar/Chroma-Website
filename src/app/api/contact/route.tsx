@@ -3,7 +3,7 @@ import { render } from "@react-email/components";
 import { transporter, smtpEmail } from "../../../utils/nodemailer";
 import { Email } from "../../components/email";
 
-export async function POST(req: NextRequest, res: NextResponse) {
+export async function POST(req: NextRequest) {
   const body = await req.json();
   const { name, email, message } = body;
 
@@ -20,9 +20,9 @@ export async function POST(req: NextRequest, res: NextResponse) {
 
   try {
     await transporter.sendMail(options);
-    return new Response("OK");
+    return NextResponse.json({ message: "OK" }, { status: 200 });
   } catch (error) {
     console.error("Failed to send email:", error);
-    return new Response("Failed to send email", { status: 500 });
+    return NextResponse.json({ message: "Failed to send email" }, { status: 500 });
   }
 }
