@@ -47,7 +47,7 @@ export default function Hero() {
 
   return (
     <section className="w-full bg-[#faf5ff] py-16 md:py-24 px-6 md:px-12 lg:px-24 font-sans">
-      <div className="max-w-7xl mx-auto flex flex-col lg:flex-row-reverse gap-12 lg:gap-8 xl:gap-12">
+  <div className="max-w-7xl mx-auto flex flex-col-reverse lg:flex-row-reverse gap-12 lg:gap-8 xl:gap-12">
         <motion.div 
           initial={{ opacity: 0, x: 50 }}
           whileInView={{ opacity: 1, x: 0 }}

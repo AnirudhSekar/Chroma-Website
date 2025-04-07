@@ -58,12 +58,19 @@
 import Image from "next/image";
 import ContactForm from "./form";
 import { motion } from "framer-motion";
-import { FiMail, FiCopy } from "react-icons/fi";
-
+import { FiMail, FiCopy,FiCheck } from "react-icons/fi";
+import { useState, useEffect } from "react";
 export default function Contact() {
+  const [copied, setCopied] = useState(false);
+
   const copyEmail = () => {
     navigator.clipboard.writeText("chromacarehq@gmail.com");
-    // You could add a toast notification here for better UX
+    setCopied(true);
+    setTimeout(() => {
+      setCopied(false);
+    }, 4000);
+   
+
   };
 
   return (
@@ -108,40 +115,41 @@ export default function Contact() {
                     onClick={copyEmail}
                     whileHover={{ scale: 1.05 }}
                     whileTap={{ scale: 0.95 }}
-                    className="p-2 rounded-lg bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition"
+                    className="p-2 rounded-lg bg-white border border-gray-200 shadow-sm hover:bg-gray-50 transition text-gray-600 flex items-center gap-2"
                     aria-label="Copy email address"
                   >
-                    <FiCopy className="text-gray-600" />
+                    {copied ? <FiCheck /> : <FiCopy />}
+                    <span>{copied ? "Copied!" : "Copy"}</span>
                   </motion.button>
-                </div>
-              </div>
+                          </div>
+                          </div>
 
-              <div className="space-y-4 pt-4 w-full">
-                <h3 className="text-xl font-semibold text-gray-800">
-                  Why contact us?
-                </h3>
-                <ul className="space-y-3 text-gray-600">
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#8932ad] mt-1">•</span>
-                    <span>Learn about our technology and clinical trials</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#8932ad] mt-1">•</span>
-                    <span>Explore partnership opportunities</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#8932ad] mt-1">•</span>
-                    <span>Get pricing and distribution information</span>
-                  </li>
-                  <li className="flex items-start gap-3">
-                    <span className="text-[#8932ad] mt-1">•</span>
-                    <span>Provide feedback or ask questions</span>
-                  </li>
-                </ul>
-              </div>
-            </div>
+                          <div className="space-y-4 pt-4 w-full">
+                          <h3 className="text-xl font-semibold text-gray-800">
+                            Why contact us?
+                          </h3>
+                          <ul className="space-y-3 text-gray-600">
+                            <li className="flex items-start gap-3">
+                            <span className="text-[#8932ad] mt-1">•</span>
+                            <span>Learn about our technology and clinical trials</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                            <span className="text-[#8932ad] mt-1">•</span>
+                            <span>Explore partnership opportunities</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                            <span className="text-[#8932ad] mt-1">•</span>
+                            <span>Get pricing and distribution information</span>
+                            </li>
+                            <li className="flex items-start gap-3">
+                            <span className="text-[#8932ad] mt-1">•</span>
+                            <span>Provide feedback or ask questions</span>
+                            </li>
+                          </ul>
+                          </div>
+                        </div>
 
-            {/* Contact Form */}
+                        {/* Contact Form */}
             <motion.div
               initial={{ opacity: 0, y: 20 }}
               whileInView={{ opacity: 1, y: 0 }}
