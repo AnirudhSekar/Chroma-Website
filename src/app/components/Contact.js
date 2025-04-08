@@ -72,7 +72,7 @@ export default function Contact() {
                       <p className="text-xs sm:text-sm font-medium text-gray-500">
                         Email us at
                       </p>
-                      <p className="text-sm sm:text-lg font-medium text-gray-900 break-all">
+                      <p className="text-sm sm:text-lg font-medium text-gray-900 break-all truncate decoration-none">
                         chromacarehq@gmail.com
                       </p>
                     </div>
